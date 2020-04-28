@@ -1,0 +1,102 @@
+.titulo-principal {
+  background: url('../img/bkg.png') no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 50px;
+  text-align: center;
+}
+
+.titulo-principal h1, h2 {
+  font-family: 'Advent Pro', sans-serif;
+  color: #FFFFFF;
+}
+
+.content-transparencia {
+  padding: 50px 120px;
+}
+
+.content-transparencia h2 {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 50px;
+  color: #444;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+p {
+  font-size: 22px;
+}
+
+.doacao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: 'Advent Pro', sans-serif;
+  margin-bottom: 50px;
+}
+
+.doacao p {
+  font-size: 18px;
+}
+
+/* TABELA */
+table {
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 300;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #F2F2F2;
+}
+
+thead tr, tfoot{
+  background-color: #87abbe;
+  color: #FFFFFF;
+}
+
+.titulo {
+  text-transform: uppercase;
+  background-color: #DE8301;
+}
+
+th {
+  padding: 5px 10px;
+}
+
+tr {
+  padding: 5px 10px;
+}
+
+td {
+  padding: 5px 10px;
+}
+
+tfoot {
+  width: 100%;
+}
+
+.valor {
+  width: 12%;
+  text-align: right;
+}
+
+.nfe {
+  width: 10%;
+}
+
+.total {
+  width: 30%;
+}
+
+.resumo {
+  margin-top: 20px
+}
+
+.resumo tfoot tr td:last-child, tbody tr td:last-child  {
+  text-align: right;
+}

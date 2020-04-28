@@ -12,7 +12,7 @@ html, body {
 }
 
 header{grid-area: header;}
-main{grid-area: main; background-color: green;}
+main{grid-area: main;}
 footer{grid-area: footer;}
 
 .container{
@@ -57,7 +57,7 @@ footer{grid-area: footer;}
   text-align: center;
   font-family: 'Advent Pro', sans-serif;
   color: #FFFFFF;
-  background: #000 url('img/bkg.png') no-repeat;
+  background: #000 url('../img/bkg.png') no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -190,7 +190,7 @@ footer{grid-area: footer;}
 }
 
 .transparencia {
-  background: #000 url('img/transparencia.png') no-repeat;
+  background: #000 url('../img/transparencia.png') no-repeat;
   background-position: center;
   background-size: cover;
   padding: 50px 120px;
@@ -201,7 +201,7 @@ footer{grid-area: footer;}
 }
 
 .transp-imagem {
-  background: #000 url('img/transparencia_01.png') no-repeat;
+  background: #000 url('../img/transparencia_01.png') no-repeat;
   background-position: center;
   background-size: cover;
   height: 300px;
