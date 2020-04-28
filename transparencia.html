@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <nav class="navbar">
+        <img src="img/logotipoccoppetec.png" alt="logotipo coppetec" class="logo">
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Projeto e Fundo</a></li>
+          <li><a href="#">Equipe</a></li>
+          <li><a href="#">Transparência</a></li>
+          <li><a href="#">Notícias</a></li>
+          <li><a href="#" id="externo">Página do projeto</a></li>
+        </ul>
+      </nav>
+      <section>
+        <h1>Fundo de Apoio Ventilador Pulmonar de Exceção para COVID-19</h1>
+      </section>
+    </header>
+    <main className="content-transparencia">
+      <h2>Transparência</h2>
+      <section class="doacao">
+        <article className="transparencia">
+          <p>Já foram doados</p>
+          <h1>R$ {doacao?.valor}</h1>
+          <p>
+          com a contribuição de <br/>
+          {doacao?.doacoesNumero} doadores
+          </p>
+      </article>
+      <article className="doacao">
+          <p>
+              Conta Corrente Para Doações <br/>
+              Fundação COPPETEC - 72.060.999/0001-75 <br/>
+              Banco do Brasil: 001
+              Agência: 2234-9 CC: 55.622-X <br/>
+          </p>
+          <p>
+              Qualquer PF ou PJ por meio da conta acima. pode doar.
+              Após a doação envie o comprovante para doador.respirador@coppetec.ufrj.br
+              Caso queira recibo da COPPETEC para fins fiscais avise pelo mesmo e-mail.
+          </p>
+      </article>
+      </section>
+
+      <section class="despesas">
+        <table>
+          <thead>
+              <tr className="titulo">
+                  <th colSpan={5}>DESPESAS EXECUTADAS</th>
+              </tr>
+              <tr>
+                  <th>Produto</th>
+                  <th>Valor Total</th>
+                  <th>CNPJ</th>
+                  <th>Razão Social</th>
+                  <th>NFe</th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr key={despesa.ordenacaoId}>
+                <td> despesa.descricao</td>
+                <td> R$ despesa.valor</td>
+                <td>despesa.favorecidoCnpj</td>
+                <td>despesa.favorecidoRazaoSocial</td>
+                <td> { < FiDownload/> } </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>R$ {total}</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+          </tfoot>
+      </table>
+
+      <table className="resumo">
+          <thead>
+              <tr className="titulo">
+                  <th colSpan={2}>RESUMO DA EXECUÇÃO DA CAMPANHA</th>
+              </tr>
+              <tr>
+                  <th>Descrição</th>
+                  <th>Valor</th>
+
+              </tr>
+          </thead> 
+          <tbody>
+            <tr key={despesa.ordenacaoId}>
+                <td> {despesa.descricao} </td>
+                <td> R$ {despesa.valor} </td>
+            </tr>
+          </tbody>
+          <tfoot>
+              <tr>
+                  <td>Saldo</td>
+                  <td>R$ {total}</td>
+              </tr>
+          </tfoot>
+      </table>
+      </section>
+    </main>
+    <footer class="rodape">
+      <div class="coluna1">
+        <h1>Projeto</h1>
+        <h2>Ventilador Pulmonar de Exceção para COVID-19</h2>
+        <p>
+          Conheça outras iniciativas do projeto, como colaborar, os
+          parceiros e todos os membros da equipe, através do
+          próprio site do Projeto.
+        </p>
+      </div>
+      <div class="coluna2">
+        <h1>Gestão do Fundo</h1>
+        <h2>Fundação COPPETEC</h2>
+        <p>
+          Rua Moniz Aragão Nº360, Bloco1
+        </p>
+        <p>
+          Ilha do Fundão - Cidade Universitária
+        </p>
+        <p>doadorrespirador@coppetec.ufrj.br</p>
+        <p>+55(21)3622-3400</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
